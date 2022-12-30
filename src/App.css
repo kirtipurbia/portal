@@ -28,11 +28,61 @@
   color: #61dafb;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa';
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* scroller design */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+input[type=text]:focus {
+  outline: none !important;
+  border-bottom: none !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none !important; 
+  margin: 0 !important; 
+}
+
+@keyframes animation {
+  to {
+    opacity: 0.2;
   }
 }
